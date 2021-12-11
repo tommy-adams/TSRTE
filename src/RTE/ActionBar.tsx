@@ -37,6 +37,18 @@ const ActionBar = ({ styles, setStyles }: Props) => {
       >
         <FaStrikethrough />
       </Button>
+      <Button
+        selected={styles.h1}
+        onSelect={() => setStyles({ ...styles, h1: !styles.h1, h4: false })}
+      >
+        <span className="font-bold">H1</span>
+      </Button>
+      <Button
+        selected={styles.h4}
+        onSelect={() => setStyles({ ...styles, h4: !styles.h4, h1: false })}
+      >
+        <span className="font-bold">H4</span>
+      </Button>
     </div>
   );
 };
