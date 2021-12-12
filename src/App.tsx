@@ -23,14 +23,6 @@ function App() {
               ]
             },
             move: {
-              attract: {
-                enable: true,
-                rotate: {
-                  x: 600,
-                  y: 1200
-                },
-                distance: 250
-              },
               direction: "none",
               enable: true,
               outModes: {
